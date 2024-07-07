@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holdings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/favicon/holdings.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeButton"><i class="fas fa-sun"></i></button>
+    </div>
+    <div class="toggle-buttons">
+        <button id="stocksButton" class="active">Stocks</button>
+        <button id="fundsButton">Mutual Funds</button>
+    </div>
+    <div id="stocksTable" class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0, 'stocksTable')">S No &#11137;</th>
+                    <th onclick="sortTable(1, 'stocksTable')">Company &#11137;</th>
+                    <th onclick="sortTable(2, 'stocksTable')">Ticker &#11137;</th>
+                    <th onclick="sortTable(3, 'stocksTable')">Sectoral Index &#11137;</th>
+                    <th onclick="sortTable(4, 'stocksTable')">Industry &#11137;</th>
+                    <th onclick="sortTable(5, 'stocksTable')">Market Cap &#11137;</th>
+                    <th onclick="sortTable(6, 'stocksTable')">Beta (β) &#11137;</th>
+                    <th>Chart</th>
+                    <th>Screener</th>
+                    <th>Tickertape</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                <div class="logo-container">
+                    <img src="assets/logo/PRICOLLTD.png" alt="Pricol Ltd" width="30">
+                    <img src="assets/flags/IND.png" alt="INDIA" width="35">
+                    <span>Pricol Ltd</span>
+                </div>
+            	</td>
+                    <td>PRICOLLTD</td>
+                    <td>Nifty Auto</td>
+                    <td>Auto Ancillaries</td>
+                    <td>Small cap</td>
+                    <td>2.95x</td>
+                    <td><a href="https://www.tradingview.com/chart/?symbol=NSE%3APRICOLLTD" target="_blank">View</a></td>
+                    <td><a href="https://www.screener.in/company/PRICOLLTD" target="_blank">Go</a></td>
+                    <td><a href="https://www.tickertape.in/stocks/pricol-PRCO" target="_blank">Go</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                    <div class="logo-container">
+                    <img src="assets/logo/TVSSCS.png" alt="TVS Supply Chain Solutions" width="30">
+                    <img src="assets/flags/IND.png" alt="INDIA" width="35">
+                    <span>TVS Supply Chain Solutions</span>
+                </div>
+                </td>
+                    <td>TVSSCS</td>
+                    <td>Nifty Auto</td>
+                    <td>Air Freight &amp; Logistics Solution Provider</td>
+                    <td>Small cap</td>
+                    <td>3.01x</td>
+                    <td><a href="https://www.tradingview.com/chart/?symbol=NSE%3ATVSSCS" target="_blank">View</a></td>
+                    <td><a href="https://www.screener.in/company/TVSSCS" target="_blank">Go</a></td>
+                    <td><a href="https://www.tickertape.in/stocks/tvs-supply-chain-solutions-TVS" target="_blank">Go</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                <div class="logo-container">
+                    <img src="assets/logo/IDFCFIRSTB.png" alt="IDFC First Bank" width="30">
+                    <img src="assets/flags/IND.png" alt="INDIA" width="35">
+                    <span>IDFC First Bank</span>
+                </div>
+            	</td>
+                    <td>IDFCFIRSTB</td>
+                    <td>Nifty Bank</td>
+                    <td>Private Bank</td>
+                    <td>Mid cap</td>
+                    <td>2.09x</td>
+                    <td><a href="https://www.tradingview.com/chart/?symbol=NSE%3AIDFCFIRSTB" target="_blank">View</a></td>
+                    <td><a href="https://www.screener.in/company/IDFCFIRSTB" target="_blank">Go</a></td>
+                    <td><a href="https://www.tickertape.in/stocks/idfc-first-bank-IDFB" target="_blank">Go</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                <td>
+                <div class="logo-container">
+                    <img src="assets/logo/DCXINDIA.png" alt="DCX Systems Ltd" width="30">
+                    <img src="assets/flags/IND.png" alt="INDIA" width="35">
+                    <span>DCX Systems Ltd</span>
+                </div>
+            	</td>
+                    <td>DCXINDIA</td>
+                    <td></td>
+                    <td>Aerospace &amp; Defense</td>
+                    <td>Small cap</td>
+                    <td>4.26x</td>
+                    <td><a href="https://www.tradingview.com/chart/?symbol=NSE%3ADCXINDIA" target="_blank">View</a></td>
+                    <td><a href="https://www.screener.in/company/DCXINDIA" target="_blank">Go</a></td>
+                    <td><a href="https://www.tickertape.in/stocks/dcx-systems-DCX" target="_blank">Go</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                <div class="logo-container">
+                    <img src="assets/logo/LEMONTREE.png" alt="Lemon Tree Hotels" width="30">
+                    <img src="assets/flags/IND.png" alt="INDIA" width="35">
+                    <span>Lemon Tree Hotels</span>
+                </div>
+            	</td>
+                    <td>LEMONTREE</td>
+                    <td>Nifty Services</td>
+                    <td>Hotels &amp; Resorts/Leisure</td>
+                    <td>Small cap</td>
+                    <td>2.77x</td>
+                    <td><a href="https://www.tradingview.com/chart/?symbol=NSE%3ALEMONTREE" target="_blank">View</a></td>
+                    <td><a href="https://www.screener.in/company/LEMONTREE" target="_blank">Go</a></td>
+                    <td><a href="https://www.tickertape.in/stocks/lemon-tree-hotels-LEMO" target="_blank">Go</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>
+                <div class="logo-container">
+                    <img src="assets/logo/PATH.png" alt="UiPath Inc" width="30">
+                    <img src="assets/flags/USA.png" alt="USA" width="35">
+                    <span>UiPath Inc</span>
+                </div>
+            	</td>
+                    <td>PATH</td>
+                    <td>Technology</td>
+                    <td>Computer Software</td>	
+                    <td>Mid cap</td>
+                    <td>0.85x</td>
+                    <td><a href="https://in.tradingview.com/chart/?symbol=NYSE%3APATH" target="_blank">View</a></td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+    <div id="fundsTable" class="table-container hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0, 'fundsTable')">S No &#11137;</th>
+                    <th onclick="sortTable(1, 'fundsTable')">Fund Name &#11137;</th>
+                    <th onclick="sortTable(2, 'fundsTable')">Benchmark &#11137;</th>
+                    <th onclick="sortTable(3, 'fundsTable')">Category &#11137;</th>
+                    <th>Info</th>
+                    <th onclick="sortTable(5, 'fundsTable')">Holdings &#11137;</th>
+                    <th onclick="sortTable(6, 'fundsTable')">AUM in Cr &#11137;</th>
+                    <th onclick="sortTable(7, 'fundsTable')">Rating &#11137;</th>
+                    <th onclick="sortTable(8, 'fundsTable')">TER &#11137;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Navi Nifty 50 Index Fund</td>
+                    <td>Nifty 50</td>
+                    <td>Index</td>
+                    <td>
+    					<a href="https://www.indmoney.com/mutual-funds/fund/navi-nifty-50-index-fund-direct-growth/1039539" target="_blank">Link 1</a><br>
+    					<a href="https://www.etmoney.com/mutual-funds/navi-nifty-50-index-fund-direct-growth/42042" target="_blank">Link 2</a>
+    				</td>
+                    <td>50</td>
+                    <td>1921</td>
+                    <td>NA</td>
+                    <td>0.06%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ICICI Prudential NASDAQ 100 Index Fund</td>
+                    <td>Nasdaq 100</td>
+                    <td>Index</td>
+                    <td>
+    					<a href="https://www.indmoney.com/mutual-funds/fund/icici-prudential-nasdaq-100-index-fund-direct-growth/1039877" target="_blank">Link 1</a><br>
+    					<a href="https://www.etmoney.com/mutual-funds/icici-prudential-nasdaq-100-index-fund-direct-growth/42211" target="_blank">Link 2</a>
+    				</td>
+                    <td>101</td>
+                    <td>1249</td>
+                    <td>NA</td>
+                    <td>0.52%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>HDFC Flexi Cap Fund</td>
+                    <td>Nifty 500</td>
+                    <td>Flexi Cap</td>
+                    <td>
+    					<a href="https://www.indmoney.com/mutual-funds/fund/hdfc-flexi-cap-fund-direct-plan-growth-option/3184" target="_blank">Link 1</a><br>
+    					<a href="https://www.etmoney.com/mutual-funds/hdfc-flexi-cap-direct-plan-growth/15593" target="_blank">Link 2</a>
+    				</td>
+                    <td>53</td>
+                    <td>54692</td>
+                    <td>4</td>
+                    <td>0.78%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tata Small Cap Fund</td>
+                    <td>Nifty Smallcap 250</td>
+                    <td>Small Cap</td>
+                    <td>
+    					<a href="https://www.indmoney.com/mutual-funds/fund/tata-small-cap-fund-direct-growth/1002043" target="_blank">Link 1</a><br>
+    					<a href="https://www.etmoney.com/mutual-funds/tata-small-cap-fund-direct-growth/38470" target="_blank">Link 2</a>
+    				</td>
+                    <td>52</td>
+                    <td>7083</td>
+                    <td>5</td>
+                    <td>0.32%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Kotak Nifty 200 Momentum 30 Index Fund</td>
+                    <td>Nifty 200 Momentum 30</td>
+                    <td>Momentum Index</td>
+                    <td>
+    					<a href="https://www.indmoney.com/mutual-funds/fund/kotak-nifty-200-momentum-30-index-fund-direct-growth/1043903" target="_blank">Link 1</a><br>
+    					<a href="https://www.etmoney.com/mutual-funds/kotak-nifty-200-momentum-30-index-fund-direct-growth/43945" target="_blank">Link 2</a>
+    				</td>
+                    <td>30</td>
+                    <td>202</td>
+                    <td>NA</td>
+                    <td>0.41%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kotak Debt Hybrid Fund</td>
+                    <td>CRISIL Hybrid 85+15</td>
+                    <td>Conservative Allocation</td>
+                    <td>
+    					<a href="https://www.indmoney.com/mutual-funds/fund/kotak-debt-hybrid-direct-growth/5063" target="_blank">Link 1</a><br>
+    					<a href="https://www.etmoney.com/mutual-funds/kotak-debt-hybrid-fund-direct-growth/17351" target="_blank">Link 2</a>
+    				</td>
+                    <td>100</td>
+                    <td>2477</td>
+                    <td>5</td>
+                    <td>0.49%</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Tata Nifty 150 Momentum 50 Index Fund</td>
+                    <td>Nifty Midcap 150 Momentum 50</td>
+                    <td>Momentum Index</td>
+                    <td>
+    					<a href="https://www.indmoney.com/mutual-funds/fund/tata-nifty-midcap-150-momentum-50-index-fund-direct-growth/1042168" target="_blank">Link 1</a><br>
+    					<a href="https://www.etmoney.com/mutual-funds/tata-nifty-midcap-150-momentum-50-index-fund-direct-growth/43099" target="_blank">Link 2</a>
+    				</td>
+                    <td>50</td>
+                    <td>323</td>
+                    <td>NA</td>
+                    <td>0.31%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <p>Last updated: 7th July 2024</p>
+        <p>Developed by <a href="https://github.com/madhu-aala" target="_blank">Madhu</a></p>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
